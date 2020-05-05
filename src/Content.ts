@@ -25,7 +25,7 @@ export default class Content {
 
         // Kezd a kódolást innen -->
         res.write("próba\n");
-        res.write("alma\n");
+        res.write("körte\n");
         // <---- Fejezd be a kódolást
 
         res.write("</pre></form></body></html>");
