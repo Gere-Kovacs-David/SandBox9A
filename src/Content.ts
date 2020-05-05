@@ -26,7 +26,7 @@ export default class Content {
         // Kezd a kódolást innen -->
         res.write("Hello\n");
         res.write("Most Gere Kovács Dávid oldalát nézed\n");
-        
+
         // <---- Fejezd be a kódolást
 
         res.write("</pre></form></body></html>");
