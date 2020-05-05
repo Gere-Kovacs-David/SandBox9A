@@ -24,8 +24,9 @@ export default class Content {
         const params = url.parse(req.url as string, true).query;
 
         // Kezd a kódolást innen -->
-        res.write("próba\n");
-        res.write(" alma\n");
+        res.write("Hello\n");
+        res.write("Most Gere Kovács Dávid oldalát nézed\n");
+        
         // <---- Fejezd be a kódolást
 
         res.write("</pre></form></body></html>");
