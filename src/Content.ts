@@ -24,29 +24,10 @@ export default class Content {
         const params = url.parse(req.url as string, true).query;
 
         // Kezd a kódolást innen -->
-        res.write("Másodfokú egyenlet gyökei\n");
-        res.write("Kérem az együtthatókat\n");
-
-        res.write("a = ");
-        let a: number = parseInt(params.a as string);
-        if (isNaN(a)) {
-            a = 1;
+        const nevek: string[] = ["Andi", "Anna", "Bence", "Laci"];
+        for (let i: number = 0; i < nevek.length; i++) {
+            res.write(nevek[i] + "\n");
         }
-        res.write(`<input type='number' name='a' value=${a} style='width:5em' onChange='this.form.submit();'\n`);
-
-        res.write("b = ");
-        let b: number = parseInt(params.b as string);
-        if (isNaN(b)) {
-            b = 2;
-        }
-        res.write(`<input type='number' name='b' value=${b} style='width:5em' onChange='this.form.submit();'\n`);
-
-        res.write("c = ");
-        let c: number = parseInt(params.c as string);
-        if (isNaN(c)) {
-            c = 3;
-        }
-        res.write(`<input type='text' name='c' value=${c} style='width:5em' onChange='this.form.submit();'\n`);
 
         // <---- Fejezd be a kódolást
 
